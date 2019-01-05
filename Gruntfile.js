@@ -32,6 +32,7 @@ module.exports = function(grunt) {
     ================================================= */
     secret: grunt.file.exists('secrets.json') ? grunt.file.readJSON('secrets.json') : {},
     config: grunt.file.readJSON('config.json'),
+    templates: grunt.file.readJSON('templates.json'),
 
     /* SASS
     ------------------------------------------------- */
@@ -303,6 +304,22 @@ module.exports = function(grunt) {
       litmus: {
         to: "<%= config.strings.litmus_email %>",
         src: 'dist_test/user_invitation.html'
+      }
+    },
+
+    postmarkPushTemplates: {
+      options: {
+        serverToken: "<%= secret.postmark.server_token %>",
+      },
+      your_server: {
+        templates: "<%= templates %>"
+      }
+    },
+
+    postmarkTemplatesConfig: {
+      options: {
+        serverToken: "<%= secret.postmark.server_token %>",
+        outputFile: "templates-server.json"
       }
     }
 

@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Comment Notification",
+    "alias": "comment-notification",
+    "subject": "{{commenter_name}} made a comment",
+    "htmlBody": "dist/comment_notification.html",
+    "textBody": "dist/comment_notification.txt"
+  },
+  {
+    "name": "Invoice",
+    "alias": "invoice",
+    "subject": "Please pay {{ total }} due by {{ due_date }}",
+    "htmlBody": "dist/invoice.html",
+    "textBody": "dist/invoice.txt"
+  },
+  {
+    "name": "Password Reset Help",
+    "alias": "password-reset-help",
+    "subject": "Set up a new password for [Product Name]",
+    "htmlBody": "dist/password_reset_help.html",
+    "textBody": "dist/password_reset_help.txt"
+  },
+  {
+    "name": "Password Reset",
+    "alias": "password-reset",
+    "subject": "Set up a new password for [Product Name]",
+    "htmlBody": "dist/password_reset.html",
+    "textBody": "dist/password_reset.txt"
+  },
+  {
+    "name": "Receipt",
+    "alias": "receipt",
+    "subject": "Receipt for [Product Name]",
+    "htmlBody": "dist/receipt.html",
+    "textBody": "dist/receipt.txt"
+  },
+  {
+    "name": "Trial Expired",
+    "alias": "trial-expired",
+    "subject": "Your [Product Name] trial has expired",
+    "htmlBody": "dist/trial_expired.html",
+    "textBody": "dist/trial_expired.txt"
+  },
+  {
+    "name": "Trial Expiring",
+    "alias": "trial-expiring",
+    "subject": "Your [Product Name] trial is about to expire",
+    "htmlBody": "dist/trial_expiring.html",
+    "textBody": "dist/trial_expiring.txt"
+  },
+  {
+    "name": "User Invitation",
+    "alias": "user-invitation",
+    "subject": "{{invite_sender_name}} invited you to [Product Name]",
+    "htmlBody": "dist/user_invitation.html",
+    "textBody": "dist/user_invitation.txt"
+  },
+  {
+    "name": "Welcome",
+    "alias": "welcome",
+    "subject": "Welcome to [Product Name], {{name}}!",
+    "htmlBody": "dist/welcome.html",
+    "textBody": "dist/welcome.txt"
+  }
+]
