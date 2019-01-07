@@ -319,7 +319,7 @@ module.exports = function(grunt) {
 
     // Download your templates from Postmark and generate a boilerplate config.
     // The config can be used with the "postmarkPushTemplates" task
-    postmarkTemplatesSetup: {
+    postmarkSetupTemplates: {
       options: {
         serverToken: "<%= secret.postmark.server_token %>",
         configOutputFile: "templates.json",
