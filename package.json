@@ -28,7 +28,7 @@
     "grunt-contrib-watch": "^1.0.0",
     "grunt-ftp-deploy": "^0.1.10",
     "grunt-inline": "^0.3.4",
-    "grunt-postmark": "git@github.com:wildbit/grunt-postmark.git#template-pushing",
+    "grunt-postmark": "git+ssh://git@github.com/wildbit/grunt-postmark.git#template-pushing",
     "grunt-premailer": "^1.0.0",
     "grunt-prettify": "^0.4.0",
     "grunt-sass": "^1.0.0",
